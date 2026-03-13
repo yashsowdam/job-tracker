@@ -1,0 +1,20 @@
+# Python
+backend/venv/
+backend/__pycache__/
+backend/**/*.pyc
+backend/db.sqlite3
+
+# Node
+frontend/node_modules/
+frontend/build/
+
+# Environment files
+backend/.env
+frontend/.env
+frontend/.env.local
+frontend/.env.production
+
+# OS / Editor
+.vscode/
+.DS_Store
+Thumbs.db
