@@ -150,6 +150,7 @@ REST_FRAMEWORK = {
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",  # CRA fallback
     "http://127.0.0.1:3000",
+    "https://job-tracker-sy.netlify.app"
 ]
 
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
