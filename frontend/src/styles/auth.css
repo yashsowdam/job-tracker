@@ -1,0 +1,42 @@
+.auth-page {
+  min-height: calc(100vh - 56px); /* navbar height approx */
+  background-image: url("../assets/auth-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  padding: 24px 12px;
+}
+
+.auth-overlay {
+  position: relative;
+  width: 100%;
+}
+
+.auth-overlay::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.253); /* dark overlay for readability */
+  backdrop-filter: blur(2px);
+}
+
+.auth-card-wrap {
+  position: relative; /* above overlay */
+  z-index: 1;
+  width: 100%;
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.auth-card {
+  background: rgba(255, 255, 255, 0.712);
+  border: 0;
+  border-radius: 16px;
+}
+
+.auth-title {
+  font-weight: 700;
+  text-align: center;
+}

@@ -1,0 +1,57 @@
+:root {
+  --app-bg: #e6e6ebfb;
+  --app-card: #ffffff;
+  --app-border: rgba(255, 255, 255, 0.308);
+  --app-text: #111827;
+  --app-muted: #6b7280;
+  --app-accent: #83a396b0; /* amber */
+}
+
+/* app area */
+.app-shell {
+  min-height: calc(100vh - 56px);
+  background: linear-gradient(135deg, #8eb9d696, #7093c5e0);
+  color: var(--app-text);
+  padding: 24px 0;
+}
+
+/* cards */
+.app-card {
+  background: var(--app-card) !important;
+  border: 1px solid var(--app-border) !important;
+  color: var(--app-text) !important;
+  border-radius: 16px;
+}
+
+/* muted text */
+.text-muted-app {
+  color: var(--app-muted) !important;
+}
+
+/* buttons */
+.btn-accent {
+  background: var(--app-accent) !important;
+  border-color: var(--app-accent) !important;
+  color: #111827 !important;
+  font-weight: 600;
+}
+.btn-outline-accent {
+  border-color: var(--app-accent) !important;
+  color: var(--app-accent) !important;
+}
+.btn-outline-accent:hover {
+  background: var(--app-accent) !important;
+  color: #111827 !important;
+}
+
+/* tables in dark cards */
+.app-card .table {
+  color: var(--app-text);
+}
+.app-card .table thead th {
+  color: var(--app-muted);
+  border-bottom-color: var(--app-border);
+}
+.app-card .table td, .app-card .table th {
+  border-top-color: var(--app-border);
+}
